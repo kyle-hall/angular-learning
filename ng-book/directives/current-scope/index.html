@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Current Scope</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Current Scope Demo</h1>
+    </header>
+
+  <!-- Note the root scope property is visible to ParentController and ChildController with and without nesting them under .root -->
+    <main ng-app="myApp">
+      <div class="root">
+        <p>We can access: {{rootProperty}}</p>
+        <div ng-controller="ParentController" class="parent">
+          <p>We can access: {{rootProperty}} and {{parentProperty}}</p>
+          <div ng-controller="ChildController" class="child">
+            <p>We can access: {{rootProperty}} and {{parentProperty}} and {{childProperty}}</p>
+            <p>{{fullSentenceFromChild}}</p>
+          </div>
+        </div>
+    </div>
+
+    <script src="scripts/lib/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+  </body>
+</html>

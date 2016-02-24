@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inheriting Scope</title>
+  </head>
+  <body ng-app="inheritingApp">
+    <div class="container" ng-controller="ParentController">
+      <div class="inner" ng-controller="ChildController">
+        <a ng-click="sayHello()">Say Hello</a>
+        <p>{{person.greeted}}</p>
+        <p>{{person.name}}</p>
+      </div>
+    </div>
+
+    <script src="js/libs/angular.min.js" charset="utf-8"></script>
+    <script src="js/controllers/ParentController.js" charset="utf-8"></script>
+    <script src="js/controllers/ChildController.js" charset="utf-8"></script>
+  </body>
+</html>

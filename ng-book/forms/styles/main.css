@@ -1,0 +1,17 @@
+
+body {
+    background-color: #fff;
+    border-top: 5px solid #3399cc;
+}
+
+.row {
+    border: 0 solid green;
+}
+
+.ng-valid {
+    border: 1px solid green;
+}
+
+.ng-invalid {
+    border: 1px solid red;
+}

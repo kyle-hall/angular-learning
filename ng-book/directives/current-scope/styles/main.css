@@ -1,0 +1,15 @@
+
+.root {
+  background-color: #d55454;
+  padding: 10px;
+}
+
+.parent {
+  background-color: #4ca760;
+  padding: 10px;
+}
+
+.child {
+  background-color: #5757a2;
+  padding: 10px;
+}

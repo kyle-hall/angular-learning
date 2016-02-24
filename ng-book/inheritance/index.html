@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Inheritance Test</title>
+    </head>
+    <body>
+        <header>
+            <h1>Inheritance Test</h1>
+        </header>
+
+        <main ng-app="app">
+            <div class="container">
+                <div class="parent" ng-controller="ParentController">
+                    <p>{{person.name}}</p>
+                    <p>{{person.email}}</p>
+                    <div class="child" ng-controller="ChildController">
+                        <div class="">
+                            <p><input type="text" ng-model="email"></p>
+                            <button ng-click="updateEmail(email)" name="button">Submit Email</button>
+                        </div>
+                        <p>{{person.name}}</p>
+                        <p>{{person.email}}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+        <script src="scripts\lib\angular.min.js" charset="utf-8"></script>
+        <script src="scripts\controllers\ParentController.js" charset="utf-8"></script>
+    </body>
+</html>
