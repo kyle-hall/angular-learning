@@ -1,0 +1,14 @@
+
+1. Create an angular application that binds a name in a text input to another tag.
+
+2. Add a list of objects to the application. There should be at least 5 objects, each with a name and description property.
+
+3. Display all of these objects, both name and description.
+
+4. Display all of these objects, this time with only the names all uppercase.
+
+5. Display all of these objects, this time with only the description all uppercase.
+
+6. Add a text input that lets the user filter the objects based on the input text.
+
+Bonus: Can you make the search function search only for a name or for a description matching the input text?

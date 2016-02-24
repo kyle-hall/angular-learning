@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz 1</title>
+  </head>
+  <body ng-app="" ng-init="tmntCharacters=[{name: 'Master Splinter', description: 'Father and teacher to the brothers.'},
+    {name: 'Raphael', description: 'Hothead who always has something to prove'},
+    {name: 'Donatello', description: 'Thinker with really gadgets.'},
+    {name: 'Michaelangelo', description: 'Comic who always has the jokes.'},
+    {name: 'Leonardo', description: 'Leader, he is the man (turtle) with the plan.'},
+    {name: 'April', description: 'Reporter and supporter of the Turtles'}]">
+    <header>
+      <h1>Quiz 1</h1>
+    </header>
+
+    <main>
+      <div class="question-one">
+        <h3>Question 1</h3>
+        <p>Enter a name here: <input type="text" ng-model="name"></p>
+        <p>You entered: <span ng-bind="name"></span></p>
+      </div>
+
+      <div class="question-two">
+        <h3>Question 2</h3>
+        <p>View source to see ng-init on body tag.</p>
+      </div>
+
+      <div class="question-three">
+        <h3>Question 3</h3>
+        <p>Here are the main TMNT characters:</p>
+        <ul ng-repeat="character in tmntCharacters">
+          <li>{{character.name}} - {{character.description}}</li>
+        </ul>
+      </div>
+
+      <div class="question-four">
+        <h3>Question 4</h3>
+        <p>Here are the main TMNT characters with their names uppercased:</p>
+        <ul ng-repeat="character in tmntCharacters">
+          <li>{{character.name | uppercase}} - {{character.description}}</li>
+        </ul>
+      </div>
+
+      <div class="question-five">
+        <h3>Question 5</h3>
+        <p>Here are the main TMNT characters with their descriptions uppercased:</p>
+        <ul ng-repeat="character in tmntCharacters">
+          <li>{{character.name}} - {{character.description | uppercase}}</li>
+        </ul>
+      </div>
+
+      <div class="question-six">
+        <h3>Question 6</h3>
+        <p>Search TMNT characters: <input type="text" ng-model="searchChar"></p>
+        <ul ng-repeat="character in tmntCharacters | filter: searchChar | orderBy: character.name">
+          <li>{{character.name}} - {{character.description}}</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../../angular.min.js" charset="utf-8"></script>
+  </body>
+</html>

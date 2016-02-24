@@ -1,0 +1,6 @@
+
+1. Create a directive that displays a link. The link can go anywhere.
+
+2. Create a directive that displays two paragraphs with some text in them.
+
+3. Create a directive that allows you to enter you name and will display it on the page (this is just to see if this works).
