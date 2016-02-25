@@ -9,6 +9,9 @@ directiveApp.directive("myDirective", function () {
       myUrl: '@',
       myLinkText: '@'
     },
-    template: '<a href="{{myUrl}}">{{myLinkText}}</a>'
+    template: '<div>' +
+    '<input type="text" ng-model="myUrl" />' +
+    '<a href="{{myUrl}}">{{myLinkText}}</a>' +
+    '</div>'
   };
 });
