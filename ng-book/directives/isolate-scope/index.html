@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Current Scope</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Isolate Scope Demo</h1>
+    </header>
+
+    <main ng-app="myApp">
+      <div  ng-controller="MainController">
+        <p>Outside myDirective: {{myProperty}}</p>
+        <div my-directive ng-init="myProperty = 'this my property'"></div>
+      </div>
+    </main>
+    <script src="scripts/lib/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+  </body>
+</html>
