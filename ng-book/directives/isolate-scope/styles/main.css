@@ -1,15 +1,22 @@
 
-.root {
-  background-color: #d55454;
-  padding: 10px;
+body {
+  font-size: 2em;
 }
 
-.parent {
-  background-color: #4ca760;
-  padding: 10px;
+body, header, main {
+  box-sizing: border-box;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: 10px;
 }
 
-.child {
-  background-color: #5757a2;
-  padding: 10px;
+p, header {
+  font-family: sans-serif;
+}
+
+.lorem {
+  font-family: Verdana, monospace;
+  font-size: 1rem;
 }
