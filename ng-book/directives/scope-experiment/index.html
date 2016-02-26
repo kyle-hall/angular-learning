@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Current Scope</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Scope Experiment</h1>
+    </header>
+
+    <main ng-app="myApp" ng-init="someProperty = 'someData'">
+      <div>
+        <p>At the root scope</p>
+        <ul>
+          <!-- <li>{{someProperty}}</li>
+          <li>{{siblingProperty}}</li> -->
+          <!-- <li>{{aThirdProperty}}</li> -->
+        </ul>
+      </div>
+      <div ng-init="siblingProperty = 'moreData'">
+        <p>Inside Div Two</p>
+        <div>
+          <ul>
+            <!-- <li>{{someProperty}}</li>
+            <li>{{siblingProperty}}</li> -->
+            <li>{{aThirdProperty}}</li>
+          </ul>
+        </div>
+        <div ng-init="aThirdProperty = 'thirdData'" ng-controller="SomeController">
+          <p>Inside Div Thr3e</p>
+          <ul>
+            <!-- <li>{{someProperty}}</li>
+            <li>{{siblingProperty}}</li> -->
+            <li>{{aThirdProperty}}</li>
+            <li>{{aForthProperty}}</li>
+          </ul>
+
+          <div ng-init="aForthProperty = '4rth'" ng-controller="SecondController">
+            <p>Inside Div 4: {{aThirdProperty}}, {{aForthProperty}}</p>
+            <div ng-controller="MainController">
+              <p>Outside myDirective: {{myProperty}}, {{aForthProperty}}</p>
+              <div my-directive ng-init="myProperty = 'this is my directive'"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/lib/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+  </body>
+</html>

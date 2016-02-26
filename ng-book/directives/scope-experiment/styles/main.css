@@ -1,0 +1,19 @@
+
+body, header, main {
+  box-sizing: border-box;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  background: #5757a2;
+}
