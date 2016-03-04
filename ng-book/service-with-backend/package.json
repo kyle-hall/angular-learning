@@ -1,0 +1,11 @@
+{
+  "name": "service-with-backend",
+  "version": "0.1.0",
+  "description": "simple front-end in Angular with NodeJS + Express backend\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo TODO: set up a test framework"
+  },
+  "author": "Kyle Hall <hallkd47@gmail.com>",
+  "license": "ISC"
+}
