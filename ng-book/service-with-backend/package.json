@@ -7,5 +7,9 @@
     "test": "echo TODO: set up a test framework"
   },
   "author": "Kyle Hall <hallkd47@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "nodemon": "^1.9.1"
+  }
 }
