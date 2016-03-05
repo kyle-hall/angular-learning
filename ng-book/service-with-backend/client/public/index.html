@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example Angular app with NodeJS backend</title>
+        <link rel="stylesheet" href="css/main.min.css">
+        <script src="js/lib/angular.min.js"></script>
+        <script src='js/lib/angular-route.min.js'></script>
+    </head>
+
+    <body ng-app="myApp">
+        <h1>Angular App with Node and Express backend</h1>
+        <div ng-controller="HomeController">
+            <h3>Button hits: {{hits}}</h3>
+            <button ng-click="registerHit()">Hit Me</button>
+        </div>
+
+        <script src='js/app.min.js'></script>
+    </body>
+</html>
